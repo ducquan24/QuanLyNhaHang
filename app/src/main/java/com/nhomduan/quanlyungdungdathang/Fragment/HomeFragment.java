@@ -83,7 +83,7 @@ public class HomeFragment extends Fragment implements UpdateRecyclerView, OnClic
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         initView(view);
-        setUpTvHoTen();
+//        setUpTvHoTen();
         setUpTvTimKiem();
         recyclerViewCategory();
         setUpRcvPhoBien();
@@ -161,18 +161,18 @@ public class HomeFragment extends Fragment implements UpdateRecyclerView, OnClic
         });
     }
 
-    private void setUpTvHoTen() {
-        String hoTen = userLogin.getName();
-        if (hoTen != null) {
-            tvTenNguoiDung.setText("Hi " + hoTen);
-        } else {
-            String userName = userLogin.getUsername();
-            tvTenNguoiDung.setText("Hi " + userName);
-        }
-    }
+//    private void setUpTvHoTen() {
+//        String hoTen = userLogin.getName();
+//        if (hoTen != null) {
+//            tvTenNguoiDung.setText("Hi " + hoTen);
+//        } else {
+//            String userName = userLogin.getUsername();
+//            tvTenNguoiDung.setText("Hi " + userName);
+//        }
+//    }
 
     private void initView(View view) {
-        tvTenNguoiDung = view.findViewById(R.id.tvTenNguoiDung);
+        //tvTenNguoiDung = view.findViewById(R.id.tvTenNguoiDung);
         tvTimKiem = view.findViewById(R.id.tvTimKiem);
         recyclerViewPopular = view.findViewById(R.id.recyclerViewPopular);
         imgSanPhamKhuyenMais = view.findViewById(R.id.imgSanPhamKhuyenMais);
