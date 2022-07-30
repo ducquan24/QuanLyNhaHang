@@ -69,7 +69,7 @@
         android:padding="10dp"
         android:text="Username"
         android:textColor="@color/black"
-        android:textSize="23sp"
+        android:textSize="25sp"
         android:textStyle="bold|italic" />
 
     <LinearLayout

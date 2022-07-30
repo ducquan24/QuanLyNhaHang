@@ -41,9 +41,6 @@
             android:name=".Activity.ShowProductActivity"
             android:exported="false" />
         <activity
-            android:name=".Activity.NhapOTPActivity"
-            android:exported="false" />
-        <activity
             android:name=".Activity.HomeActivity"
             android:exported="true" />
         <activity

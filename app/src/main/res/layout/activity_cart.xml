@@ -27,7 +27,7 @@
         android:layout_width="match_parent"
         android:gravity="center"
         android:layout_height="?actionBarSize"
-        android:text="Thanh Toán"
+        android:text="Đặt hàng"
         android:textSize="25sp"
         android:textStyle="bold"
         android:background="@color/orange"

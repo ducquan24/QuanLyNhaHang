@@ -11,8 +11,6 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -32,9 +30,7 @@ import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthOptions;
 import com.google.firebase.auth.PhoneAuthProvider;
 import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.FirebaseDatabase;
 import com.nhomduan.quanlyungdungdathang.Activity.LoginActivity;
-import com.nhomduan.quanlyungdungdathang.Activity.NhapOTPActivity;
 import com.nhomduan.quanlyungdungdathang.Dao.UserDao;
 import com.nhomduan.quanlyungdungdathang.Interface.IAfterGetAllObject;
 import com.nhomduan.quanlyungdungdathang.Interface.IAfterInsertObject;
@@ -43,7 +39,6 @@ import com.nhomduan.quanlyungdungdathang.R;
 import com.nhomduan.quanlyungdungdathang.Utils.LoginViewModel;
 import com.nhomduan.quanlyungdungdathang.Utils.OverUtils;
 
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 
@@ -242,12 +237,6 @@ public class SignupTabFragment extends Fragment {
                                 OverUtils.makeToast(getContext(), "Lỗi thực hiện");
                             }
 
-                            @Override
-                            public void onCodeSent(@NonNull String verificationId,
-                                                   @NonNull PhoneAuthProvider.ForceResendingToken token) {
-                                Log.d("TAG", "onCodeSent:" + verificationId);
-                                goToEnterOTPActivity(user, verificationId);
-                            }
 
 
                         }).build();
@@ -287,10 +276,5 @@ public class SignupTabFragment extends Fragment {
                 });
     }
 
-    private void goToEnterOTPActivity(User user, String verificationId) {
-        Intent intent = new Intent(getContext(), NhapOTPActivity.class);
-        intent.putExtra("user", user);
-        intent.putExtra("verificationId", verificationId);
-        startActivity(intent);
-    }
+
 }
