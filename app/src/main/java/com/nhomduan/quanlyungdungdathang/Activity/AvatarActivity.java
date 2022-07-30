@@ -97,6 +97,7 @@ public class AvatarActivity extends AppCompatActivity {
 
     private void setUpSelectImg() {
         adapter.setClickAvatar(avatar -> {
+            ;
             if (avatar.getImage().equals("null")) {
                 mGetContent.launch("image/*");
             } else {

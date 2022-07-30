@@ -48,7 +48,7 @@
                 android:drawablePadding="10dp"
                 android:ems="10"
                 android:gravity="center_vertical"
-                android:hint="Tìm kiếm sản phẩm"
+                android:hint="Bạn cần tìm gì hôm nay?"
                 android:paddingLeft="20dp"
                 android:textSize="14sp"
                 android:textStyle="italic"/>

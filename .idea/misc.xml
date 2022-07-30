@@ -49,12 +49,29 @@
         <entry key="..\:/desktop/aaaa/QuanLyNhaHang-master/QuanLyNhaHang-master/QuanLyNhaHang-master/app/src/main/res/drawable/edit_text_bg.xml" value="0.119" />
         <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/activity_home.xml" value="0.264" />
         <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/activity_main.xml" value="0.1078125" />
+        <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/activity_order.xml" value="0.1078125" />
+        <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/activity_search.xml" value="0.2" />
+        <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/activity_status_don_hang.xml" value="0.11041666666666666" />
+        <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/dialog_address_user.xml" value="0.11041666666666666" />
         <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/fragment_home.xml" value="0.10400000000000001" />
         <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/fragment_like_product.xml" value="0.1078125" />
         <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/fragment_login_tab.xml" value="0.1078125" />
         <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/fragment_order.xml" value="0.1078125" />
         <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/fragment_processing__don_hang_.xml" value="0.1078125" />
         <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/fragment_profile.xml" value="0.1078125" />
+        <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/fragment_signup_tab.xml" value="0.1078125" />
+        <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/fragment_waitconfirmation__don_hang_.xml" value="0.264" />
+        <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/item_don_hang_chi_tiet.xml" value="0.2" />
+        <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/item_donhang.xml" value="0.264" />
+        <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/item_san_pham_yeu_thich.xml" value="0.1078125" />
+        <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/layout_ghi_chu.xml" value="0.1078125" />
+        <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/layout_them_dia_chi.xml" value="0.264" />
+        <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/viewholder_avatar.xml" value="0.2" />
+        <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/viewholder_cart.xml" value="0.16" />
+        <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/viewholder_cat.xml" value="0.176" />
+        <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/viewholder_order.xml" value="0.1078125" />
+        <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/viewholder_popular.xml" value="0.264" />
+        <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/viewholder_product.xml" value="0.176" />
       </map>
     </option>
   </component>
