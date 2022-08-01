@@ -14,11 +14,12 @@
         android:theme="@style/Theme.QuanLyNhaHang"
         android:usesCleartextTraffic="true">
 
-
+        <activity
+            android:name=".Activity.GioiThieuActivity"
+            android:exported="false" />
         <activity
             android:name=".Activity.OrderActivity"
             android:exported="false" />
-
         <activity
             android:name=".Activity.AvatarActivity"
             android:exported="false" />

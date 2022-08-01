@@ -130,15 +130,14 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cv_trungtamhotro"
+            android:id="@+id/cv_GT"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="10dp"
             app:cardBackgroundColor="#D0F6D2"
             app:cardElevation="5dp"
-            app:cardCornerRadius="8dp">
-
+            app:cardCornerRadius="8dp">>
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -157,7 +156,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_toRightOf="@+id/img_support"
-                    android:text="Trung tâm hỗ trợ"
+                    android:text="Giới thiếu"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
             </RelativeLayout>
@@ -175,5 +174,4 @@
         android:text="Đăng xuất"
         android:textSize="16sp"
         android:textStyle="bold" />
-
 </RelativeLayout>

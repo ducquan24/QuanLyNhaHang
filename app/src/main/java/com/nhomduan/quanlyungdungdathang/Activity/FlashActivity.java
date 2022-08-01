@@ -9,8 +9,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import com.github.ybq.android.spinkit.style.Wave;
 import com.google.firebase.database.DatabaseError;
@@ -27,12 +32,29 @@ import java.util.TimerTask;
 
 public class FlashActivity extends AppCompatActivity {
     public static User userLogin;
+    private ImageView img;
+    String passState;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        String passState = OverUtils.getSPInstance(FlashActivity.this, OverUtils.PASS_FILE)
+        passState = OverUtils.getSPInstance(FlashActivity.this, OverUtils.PASS_FILE)
                 .getString("pass", OverUtils.NO_PASS);
-        setUpPassAction(passState);
+        if (passState != OverUtils.NO_PASS) {
+            setUpPassAction(passState);
+        }
+        img = findViewById(R.id.img3);
+        if (passState != OverUtils.PASS_LOGIN_ACTIVITY) {
+            Animation();
+        }
+        if (passState == OverUtils.NO_PASS) {
+            Start();
+        }
+    }
+
+    private void Animation() {
+        Animation animation = AnimationUtils.loadAnimation(this, R.anim.slider_in_right);
+        img.startAnimation(animation);
     }
 
     private void setUpPassAction(String passState) {
@@ -81,17 +103,18 @@ public class FlashActivity extends AppCompatActivity {
                 OverUtils.makeToast(FlashActivity.this, ERROR_MESSAGE);
             }
         });
-
-        // cài đặt delay vào màn hình login
-
     }
 
-
-    public void btnStart(View view) {
-        SharedPreferences.Editor editor = OverUtils.getSPInstance(FlashActivity.this, OverUtils.PASS_FILE).edit();
-        editor.putString("pass", OverUtils.PASS_FLASH_ACTIVITY);
-        editor.apply();
-        startActivity(new Intent(FlashActivity.this, LoginActivity.class));
-        finish();
+    public void Start() {
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                SharedPreferences.Editor editor = OverUtils.getSPInstance(FlashActivity.this, OverUtils.PASS_FILE).edit();
+                editor.putString("pass", OverUtils.PASS_FLASH_ACTIVITY);
+                editor.apply();
+                startActivity(new Intent(FlashActivity.this, LoginActivity.class));
+                finish();
+            }
+        }, 2000);
     }
 }

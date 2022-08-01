@@ -8,6 +8,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -30,6 +31,7 @@ import androidx.fragment.app.FragmentActivity;
 
 import com.google.firebase.database.DatabaseError;
 import com.nhomduan.quanlyungdungdathang.Activity.AvatarActivity;
+import com.nhomduan.quanlyungdungdathang.Activity.GioiThieuActivity;
 import com.nhomduan.quanlyungdungdathang.Activity.HomeActivity;
 import com.nhomduan.quanlyungdungdathang.Activity.LoginActivity;
 import com.nhomduan.quanlyungdungdathang.Activity.OrderActivity;
@@ -48,7 +50,7 @@ public class ProfileFragment extends Fragment {
     private TextView tvUsername;
     private Button btnCancel, btnChange, btnLogout, btnChangeAdress, btnComfirm;
     private EditText edUsername, edPass, edPassRepeat, edAddress;
-    private CardView cvAddress, cvOrder, cvSupport;
+    private CardView cvAddress, cvOrder, cv_GT;
 
     private FragmentActivity fragmentActivity;
     private Context mContext;
@@ -84,17 +86,17 @@ public class ProfileFragment extends Fragment {
         setUpBtnLogout();
         setUpChangeAvatarAction();
         setUpToOrderAction();
-        setUpToSupportAction();
+        setUpBtnGT();
     }
 
     private void initView(View view) {
         cvAddress = view.findViewById(R.id.cv_diachi);
         cvOrder = view.findViewById(R.id.cv_donhang);
-        cvSupport = view.findViewById(R.id.cv_trungtamhotro);
         imgAvatar = view.findViewById(R.id.img_avatar_profile);
         imgEdit = view.findViewById(R.id.img_edit_profile);
         tvUsername = view.findViewById(R.id.tv_accountname_profile);
         btnLogout = view.findViewById(R.id.btn_logout_account);
+        cv_GT = view.findViewById(R.id.cv_GT);
     }
 
     private void getUserLogin() {
@@ -151,6 +153,12 @@ public class ProfileFragment extends Fragment {
         });
     }
 
+    private void setUpBtnGT() {
+        cv_GT.setOnClickListener(view -> {
+            startActivity(new Intent(mContext, GioiThieuActivity.class));
+        });
+    }
+
     private void setUpChangeAvatarAction() {
         imgAvatar.setOnClickListener(v -> {
             startActivity(new Intent(mContext, AvatarActivity.class));
@@ -160,16 +168,6 @@ public class ProfileFragment extends Fragment {
     private void setUpToOrderAction() {
         cvOrder.setOnClickListener(v -> {
             startActivity(new Intent(mContext, OrderActivity.class));
-        });
-    }
-
-    private void setUpToSupportAction() {
-        cvSupport.setOnClickListener(v -> {
-            requestPermissions(Manifest.permission.CALL_PHONE, request -> {
-                if (request) {
-                    callPhone();
-                }
-            });
         });
     }
 
