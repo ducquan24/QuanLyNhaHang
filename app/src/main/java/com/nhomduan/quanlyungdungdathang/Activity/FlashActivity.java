@@ -40,9 +40,7 @@ public class FlashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         passState = OverUtils.getSPInstance(FlashActivity.this, OverUtils.PASS_FILE)
                 .getString("pass", OverUtils.NO_PASS);
-        if (passState != OverUtils.NO_PASS) {
-            setUpPassAction(passState);
-        }
+        setUpPassAction(passState);
         img = findViewById(R.id.img3);
         if (passState != OverUtils.PASS_LOGIN_ACTIVITY) {
             Animation();
