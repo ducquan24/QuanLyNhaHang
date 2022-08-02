@@ -4,13 +4,10 @@ import static com.nhomduan.quanlyungdungdathang.Utils.OverUtils.ERROR_MESSAGE;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
@@ -21,7 +18,7 @@ import com.github.ybq.android.spinkit.style.Wave;
 import com.google.firebase.database.DatabaseError;
 import com.nhomduan.quanlyungdungdathang.Dao.UserDao;
 import com.nhomduan.quanlyungdungdathang.Interface.IAfterGetAllObject;
-import com.nhomduan.quanlyungdungdathang.Interface.IDone;
+import com.nhomduan.quanlyungdungdathang.LocalDatabase.LocalUserDatabase;
 import com.nhomduan.quanlyungdungdathang.Model.User;
 import com.nhomduan.quanlyungdungdathang.R;
 import com.nhomduan.quanlyungdungdathang.Utils.OverUtils;
@@ -33,7 +30,7 @@ import java.util.TimerTask;
 public class FlashActivity extends AppCompatActivity {
     public static User userLogin;
     private ImageView img;
-    String passState;
+    private String passState, user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +62,7 @@ public class FlashActivity extends AppCompatActivity {
                 goToActivity(loginIntent);
                 break;
             case OverUtils.PASS_LOGIN_ACTIVITY:
+                user = OverUtils.getUserLogin(FlashActivity.this).getUsername();
                 Intent homeIntent = new Intent(FlashActivity.this, HomeActivity.class);
                 goToActivity(homeIntent);
                 break;
@@ -81,26 +79,30 @@ public class FlashActivity extends AppCompatActivity {
         progressCircular = findViewById(R.id.progress_circular);
         progressCircular.setIndeterminateDrawable(new Wave());
 
-        UserDao.getInstance().getUserByUserName(OverUtils.getUserLogin(FlashActivity.this).getUsername(), new IAfterGetAllObject() {
-            @Override
-            public void iAfterGetAllObject(Object obj) {
-                if(obj != null) {
-                    userLogin = (User) obj;
-                    timer.schedule(new TimerTask() {
-                        @Override
-                        public void run() {
-                            startActivity(intent);
-                            finish();
-                        }
-                    }, 500);
+        if (user != null) {
+            UserDao.getInstance().getUserByUserName(OverUtils.getUserLogin(FlashActivity.this).getUsername(), new IAfterGetAllObject() {
+                @Override
+                public void iAfterGetAllObject(Object obj) {
+                    if (obj != null) {
+                        userLogin = (User) obj;
+                        timer.schedule(new TimerTask() {
+                            @Override
+                            public void run() {
+                                startActivity(intent);
+                                finish();
+                            }
+                        }, 500);
+                    }
                 }
-            }
 
-            @Override
-            public void onError(DatabaseError error) {
-                OverUtils.makeToast(FlashActivity.this, ERROR_MESSAGE);
-            }
-        });
+                @Override
+                public void onError(DatabaseError error) {
+                    OverUtils.makeToast(FlashActivity.this, ERROR_MESSAGE);
+                }
+            });
+        } else {
+            Start();
+        }
     }
 
     public void Start() {
