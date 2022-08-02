@@ -3,19 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/QuanLyNhaHang/app/src/main/res/drawable-v24/bg_border_button2.xml" value="0.1515" />
-        <entry key="..\:/QuanLyNhaHang/app/src/main/res/drawable/bg_border_button.xml" value="0.1515" />
-        <entry key="..\:/QuanLyNhaHang/app/src/main/res/layout/activity_cart.xml" value="0.25" />
-        <entry key="..\:/QuanLyNhaHang/app/src/main/res/layout/activity_chi_tiet_don_hang.xml" value="0.25" />
-        <entry key="..\:/QuanLyNhaHang/app/src/main/res/layout/activity_flash.xml" value="0.25" />
-        <entry key="..\:/QuanLyNhaHang/app/src/main/res/layout/activity_gioi_thieu.xml" value="0.25" />
-        <entry key="..\:/QuanLyNhaHang/app/src/main/res/layout/activity_home.xml" value="0.25" />
-        <entry key="..\:/QuanLyNhaHang/app/src/main/res/layout/activity_nhap_otp.xml" value="0.25" />
-        <entry key="..\:/QuanLyNhaHang/app/src/main/res/layout/activity_show_product.xml" value="0.25" />
-        <entry key="..\:/QuanLyNhaHang/app/src/main/res/layout/activity_status_don_hang.xml" value="0.25" />
-        <entry key="..\:/QuanLyNhaHang/app/src/main/res/layout/fragment_completed__don_hang_.xml" value="0.25" />
-        <entry key="..\:/QuanLyNhaHang/app/src/main/res/layout/fragment_danh_sach_don_hang_by_t_t.xml" value="0.25" />
-        <entry key="..\:/QuanLyNhaHang/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
         <entry key="..\:/QuanLyNhaHangaaaa/app/src/main/res/layout/activity_account.xml" value="0.24592391304347827" />
         <entry key="..\:/QuanLyNhaHangaaaa/app/src/main/res/layout/activity_avatar.xml" value="0.24592391304347827" />
         <entry key="..\:/QuanLyNhaHangaaaa/app/src/main/res/layout/activity_cart.xml" value="0.24592391304347827" />
@@ -60,7 +47,12 @@
         <entry key="..\:/QuanLyNhaHangaaaa/app/src/main/res/menu/bottom_nav_home.xml" value="0.25" />
         <entry key="..\:/QuanLyNhaHangaaaa/app/src/main/res/menu/search.xml" value="0.25" />
         <entry key="..\:/desktop/aaaa/QuanLyNhaHang-master/QuanLyNhaHang-master/QuanLyNhaHang-master/app/src/main/res/drawable/edit_text_bg.xml" value="0.119" />
+        <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/drawable/bg_border_button.xml" value="0.1685" />
+        <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/activity_account.xml" value="0.25" />
+        <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/activity_flash.xml" value="0.19479166666666667" />
+        <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/activity_gioi_thieu.xml" value="0.25" />
         <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/activity_home.xml" value="0.264" />
+        <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/activity_main.xml" value="0.1078125" />
         <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/activity_order.xml" value="0.1078125" />
         <entry key="..\:/desktop/aaaa/QuanLyNhaHang/QuanLyNhaHang/QuanLyNhaHang/app/src/main/res/layout/activity_search.xml" value="0.2" />
