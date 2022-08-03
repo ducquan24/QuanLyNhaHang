@@ -217,11 +217,9 @@
                         android:textColor="@color/white"
                         android:layout_marginLeft="2dp"
                         android:paddingLeft="2dp"
-                        android:drawableEnd="@drawable/ic_next"
-                        android:drawableRight="@drawable/ic_next"
                         android:drawablePadding="4dp"
                         android:gravity="center_vertical"
-                        android:text="Đối thời gian" />
+                        android:text="Oder Food" />
 
                 </LinearLayout>
 
@@ -255,6 +253,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="16dp"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
                         android:text="TextView"
                         app:layout_constraintStart_toEndOf="@+id/imgSanPham"
                         app:layout_constraintTop_toTopOf="parent"
@@ -267,6 +268,8 @@
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="16dp"
                         android:text="TextView"
+                        android:textSize="18dp"
+                        android:textColor="@color/red"
                         app:layout_constraintStart_toEndOf="@+id/imgSanPham"
                         app:layout_constraintTop_toBottomOf="@+id/tvTenSanPham"
                         android:layout_marginLeft="16dp" />
