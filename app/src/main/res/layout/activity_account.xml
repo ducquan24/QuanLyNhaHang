@@ -170,7 +170,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_toRightOf="@+id/img_support"
-                    android:text="Trung tâm hỗ trợ"
+                    android:text="Giới Thiệu"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
             </RelativeLayout>
