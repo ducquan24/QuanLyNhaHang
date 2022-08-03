@@ -101,7 +101,7 @@
                         android:layout_height="0dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginLeft="8dp"
-                        android:text="Nguyễn Doãn Hùng"
+                        android:text="Lê Đức Quân"
                         android:textColor="@color/black"
                         app:layout_constraintBottom_toBottomOf="@+id/tvTiltleHoTen"
                         app:layout_constraintStart_toEndOf="@+id/tvTiltleHoTen"
