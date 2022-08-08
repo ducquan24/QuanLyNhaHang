@@ -37,9 +37,6 @@ public class UserDao {
         return instance;
     }
 
-
-
-
     public void getAllUserListener(IAfterGetAllObject iAfterGetAllObject) {
         FirebaseDatabase.getInstance().getReference()
                 .child("user").addValueEventListener(new ValueEventListener() {

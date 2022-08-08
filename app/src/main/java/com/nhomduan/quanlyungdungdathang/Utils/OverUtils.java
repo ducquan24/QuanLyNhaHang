@@ -6,26 +6,15 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.net.Uri;
-import android.os.Build;
 import android.util.Log;
 import android.webkit.MimeTypeMap;
 import android.widget.Toast;
-
-import androidx.annotation.RequiresApi;
 
 import com.google.gson.Gson;
 import com.nhomduan.quanlyungdungdathang.LocalDatabase.LocalUserDatabase;
 import com.nhomduan.quanlyungdungdathang.Model.Product;
 import com.nhomduan.quanlyungdungdathang.Model.User;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.nio.charset.StandardCharsets;
 import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -118,8 +107,12 @@ public class OverUtils {
     }
 
     public static User getUserLogin(Context context) {
+        User user = null;
         List<User> userList = LocalUserDatabase.getInstance(context).getUserDao().getAll();
         Log.d("TAG", "getUserLogin: "+ new Gson().toJson(userList));
-        return userList.get(0);
+        if (userList != null) {
+            user = userList.get(0);
+        }
+        return user;
     }
 }
